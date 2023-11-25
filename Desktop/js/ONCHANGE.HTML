@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONCHANGE</title>
+    <style>
+        div{
+            margin: auto;
+            color: red;
+            width: 600px;
+            height: 100px;
+            text-align: center;
+            margin-top: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+    <h1>On change function working</h1>
+    <input type="text" id="demo" onchange="myfunction()">
+</div>
+</body>
+<script>
+    function myfunction(){
+       let input= document.getElementById("demo").value;
+        alert("your value is:"+input)
+    }
+</script>
+</html>

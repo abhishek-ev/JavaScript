@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS id</title>
+</head>
+
+<body>
+    <p id="p1">hai</p>
+    <p class="p2">hello</p>
+    <p class="p2">welcome</p>
+
+    <ul>
+        <li>abu</li>
+        <li>abu</li>
+    </ul>
+
+    <button onclick="myfunction()">change</button>
+    <script>
+        let c = document.getElementById("p1");
+        const d = document.getElementsByClassName("p2");
+        console.log(c);
+        console.log(d[0]);
+        console.log(d[1]);
+
+        function myfunction() {
+            const list = document.getElementsByTagName("ul")[0];
+            list.getElementsByTagName("li")[0].innerHTML = "criz";
+        }
+
+    </script>
+</body>
+
+</html>
+
+<!-- 
+
+    if---VOTE
+    switch----CURRENT Date
+    DATE--
+    typeof--
+    Sqr--  
+    while--natural numbers
+    for-- factoral
+    for in loop
+
+-->

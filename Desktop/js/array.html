@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let car =["BMW M2","Bugati","GTR","Dodge"]
+        let color =["Blue","Yelow","White","Black"]
+
+        console.log(car[0]);
+        document.write(car[0]+ "<br>");
+ 
+        car.push("Porche");
+        document.write(car + "<br>");
+
+        car.pop();
+        document.write(car + "<br>");
+
+        delete car[2];
+        document.write(car + "<br>");
+
+        car.push("ABS");
+        document.write(car + "<br>");
+
+        car.sort();
+        document.write(car + "<br>");
+
+       car.splice(2,1,"skyline") 
+       document.write(car + "<br>");
+
+       car.splice(2,2,"skyline","abu") 
+       document.write(car + "<br>");
+
+       let num=[23,2,5,6,45,19];
+       num.sort(function(a,b)
+       {
+        return(a-b);
+       })
+       document.getElementById("demo").innerHTML=num;
+
+
+let a=["box","box2","box3","box4","box5"];
+a.forEach(function(a){
+    document.write(a+"<br>")
+});
+
+let b=[1,23,33,45,5,6];
+b.forEach(function(num){
+    document.write(num+"<br>")
+})
+
+
+
+
+
+    </script>
+</body>
+</html>

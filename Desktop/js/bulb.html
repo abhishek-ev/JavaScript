@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulb</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+   img{
+    width: 100px;
+    height: 180px;
+   margin-top: 250px;
+   margin-left: 500px;
+   } 
+   p{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 30px;
+   margin-left: 500px;
+   
+   }
+</style>
+<body>
+    
+   <img id="offbulb" onclick="myfunction()" src="https://www.w3schools.com/js/pic_bulbon.gif">
+   <p>click bulb</p>
+    <script>
+        function myfunction(){
+
+            var image= document.getElementById("offbulb");
+
+if(image.src.match("bulboff"))
+{
+    image.src="https://www.w3schools.com/js/pic_bulbon.gif";
+}
+
+else{
+    image.src="https://www.w3schools.com/js/pic_bulboff.gif";
+}
+  }
+
+    </script>
+</body>
+</html>
